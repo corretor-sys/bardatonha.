@@ -1,0 +1,26 @@
+.virada {background:radial-gradient(ellipse at top right,#243453,transparent 65%),#101725;color:#fff7df}
+.gig {display:grid;grid-template-columns:1.35fr 1fr 1fr;align-items:center;gap:clamp(1rem,3vw,3rem)}
+.virada .eyebrow,.virada h2 em {color:#ffcf52}
+.virada h2 {line-height:.96;margin:.3em 0;color:#fff7df}
+.virada h3 {font-size:clamp(1.55rem,3vw,2.5rem);margin:0}
+.show-date {font-weight:bold;color:#ffdc80}
+.bus {border-top:1px dashed #99875d;padding-top:1rem;max-width:32ch}
+.gig figure,.visit-board figure {margin:0;min-width:0}
+.gig figure img,.gig video {width:100%;aspect-ratio:9/16;height:auto;display:block;border-radius:8px;background:#0b101c;object-fit:contain}
+.gig figcaption {margin-top:.7rem;color:#f0d793;font-size:.95rem}
+.visit-board {min-width:0;padding:clamp(.75rem,2vw,1.25rem);background:#fff7dc;box-shadow:7px 7px 0 #47371c;border:2px solid #30291e;border-radius:8px;position:relative}
+.visit-board figure {position:relative}
+.visit-board figure img {display:block;width:100%;height:clamp(155px,17vw,240px);object-fit:cover}
+.visit-board figcaption {position:absolute;bottom:.75rem;left:.65rem;background:#ffdc59;color:#261f13;font-weight:750;padding:.4rem .7rem;transform:rotate(-2deg)}
+.location .visit-board iframe {display:block;width:100%;height:225px;margin-top:.75rem}
+@media(max-width:820px){.gig {grid-template-columns:1fr 1fr}.gig-copy{grid-column:1/-1}.bus{max-width:50ch}}
+@media(max-width:480px){.gig{gap:1.2rem;grid-template-columns:1fr}.gig figure{width:100%}.gig-copy{grid-column:auto}}
+
+.ticket-wrap {margin-top:clamp(2rem,5vw,4rem)}
+.ticket-note {display:grid;grid-template-columns:clamp(8rem,18vw,14rem) 1fr;align-items:stretch;background:#fff2c9;color:#252016;border-radius:12px;overflow:hidden}
+.ticket-note img {width:100%;height:100%;max-height:205px;object-fit:contain;background:#efefef}
+.ticket-note>div {align-self:center;padding:clamp(1rem,3vw,2.5rem);border-left:2px dashed #bda66b}
+.ticket-note .eyebrow {color:#74541a;margin:0 0 .55rem}
+.ticket-note h3 {font-size:clamp(1.5rem,3vw,2.5rem)}
+.ticket-note p:last-child {margin:.5rem 0 0}
+@media(max-width:520px){.ticket-note{grid-template-columns:1fr}.ticket-note img{height:200px}.ticket-note>div{border-left:0;border-top:2px dashed #bda66b}}
